@@ -1,0 +1,61 @@
+.iframe > iframe {
+    height: 12rem;
+    position: relative;
+    display:block;
+    bottom: 4.2vw;
+    width: 26.7vw;
+    margin-right: 12px;
+    right: 20%;
+}
+
+.info_iframe > .texto_iframe, .titulo_iframe {
+    color:#fff;
+}
+
+
+@media (max-width:1200px) {
+    .iframe > iframe {
+        height: 10.5rem;
+        display:block;
+        width: 88vw;
+        position: relative;
+        right: 13vw;
+        bottom: 15.3vw;
+    }
+}
+
+@media (min-width:1900px) {
+    .iframe > iframe {
+        height: 12rem;
+        position: relative;
+        display:block;
+        bottom: 2.8vw;
+        width: 18.9vw;
+        margin-right: 12px;
+        right: 20%;
+    }
+}
+
+.icone_pesquisa {
+    position: relative;
+    bottom: 2.8vw;
+    float: right;
+    right: 18px;
+}
+
+.icone_pesquisa > i {
+    color: black;
+    font-size: 14pt;
+}
+
+@media (max-width:920px) {
+    .icone_pesquisa {
+        bottom: 10.8vw;
+    }
+}
+
+@media (min-width:1920px) {
+    .icone_pesquisa {
+        bottom: 2.1vw;
+    }
+}
