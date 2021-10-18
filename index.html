@@ -58,7 +58,8 @@
           data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
           data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
           <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
-            <span></span></div>
+            <span></span>
+          </div>
           <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
             <div class="rd-navbar-aside">
               <ul class="list-inline navbar-contact-list">
@@ -123,10 +124,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 text-center">
-              <input type="search" class="form-control" placeholder="Pesquise">
-              <div class="icone_pesquisa">
-                <i class="fas fa-search"></i>
-              </div>
+            <input type="search" id="pesquisa" class="form-control" placeholder="Pesquise">
+            <div class="icone_pesquisa" id="evento_de_busca">
+              <i class="fas fa-search"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -147,17 +148,20 @@
         </div>
 
         <div class="row row-30 justify-content-center">
-         
+
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark iframes">
               <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405203489!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405203489!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
               <div class="info_iframe">
-                <h4 class="titulo_iframe"> Loja 01 - Vasconcelos </h4> 
-                <p class="texto_iframe"> R. Alameda dos Salgueiros, 309 - Manoel de Vasconcelos, SumaréSP - 13174-551  </p>  
-                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00  </p> 
+                <h4 class="titulo_iframe"> Loja 01 - Vasconcelos </h4>
+                <p class="texto_iframe"> R. Alameda dos Salgueiros, 309 - Manoel de Vasconcelos, SumaréSP - 13174-551
+                </p>
+                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00 </p>
               </div>
             </div>
           </div>
@@ -165,13 +169,15 @@
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark iframes">
               <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405313767!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405313767!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
               <div class="info_iframe">
-                <h4 class="titulo_iframe"> Loja 02 - Rebouças </h4> 
-                <p class="texto_iframe"> Av. Rebouças, 3391 - Centro, Sumaré SP - 13170-023.  </p>  
-                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00  </p> 
+                <h4 class="titulo_iframe"> Loja 02 - Rebouças </h4>
+                <p class="texto_iframe"> Av. Rebouças, 3391 - Centro, Sumaré SP - 13170-023. </p>
+                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00 </p>
               </div>
             </div>
           </div>
@@ -179,13 +185,16 @@
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark iframes">
               <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.141495894415!2d-47.16739108559508!3d-22.834253985048775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bf3caa11ca85%3A0x930d3dc7a99c5085!2sR.%20Ant%C3%B4nio%20Francisco%20Filho%2C%2010%20-%20Parque%20Progresso%20(Nova%20Veneza)%2C%20Sumar%C3%A9%20-%20SP%2C%2013180-050!5e0!3m2!1spt-BR!2sbr!4v1634405498266!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.141495894415!2d-47.16739108559508!3d-22.834253985048775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bf3caa11ca85%3A0x930d3dc7a99c5085!2sR.%20Ant%C3%B4nio%20Francisco%20Filho%2C%2010%20-%20Parque%20Progresso%20(Nova%20Veneza)%2C%20Sumar%C3%A9%20-%20SP%2C%2013180-050!5e0!3m2!1spt-BR!2sbr!4v1634405498266!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
               <div class="info_iframe">
-                <h4 class="titulo_iframe"> Loja 03 - Matão </h4> 
-                <p class="texto_iframe"> R. Antônio Francisco Filho, 10 - Parque Progresso (Matão), Sumaré SP - 13180-050.  </p>  
-                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00  </p> 
+                <h4 class="titulo_iframe"> Loja 03 - Matão </h4>
+                <p class="texto_iframe"> R. Antônio Francisco Filho, 10 - Parque Progresso (Matão), Sumaré SP -
+                  13180-050. </p>
+                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00 </p>
               </div>
             </div>
           </div>
@@ -193,31 +202,36 @@
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark iframes">
               <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405473259!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.489958783229!2d-47.25802698559527!3d-22.82135558505538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bd0b2a38fd6d%3A0xe2c86de59a06a366!2sAlameda%20dos%20Salgueiros%2C%20309%20-%20Parque%20Manoel%20de%20Vasconcelos%2C%20Sumar%C3%A9%20-%20SP%2C%2013174-551!5e0!3m2!1spt-BR!2sbr!4v1634405473259!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
               <div class="info_iframe">
-                <h4 class="titulo_iframe"> Loja 04 - Bordon </h4> 
-                <p class="texto_iframe"> R. Alameda dos Salgueiros, 309 - Manoel de Vasconcelos, SumaréSP - 13174-551  </p>  
-                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00  </p> 
+                <h4 class="titulo_iframe"> Loja 04 - Bordon </h4>
+                <p class="texto_iframe"> R. Alameda dos Salgueiros, 309 - Manoel de Vasconcelos, SumaréSP - 13174-551
+                </p>
+                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00 </p>
               </div>
             </div>
           </div>
 
 
-          <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
+          <diva class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark iframes">
               <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.2895172396857!2d-47.21896128559424!3d-22.865761085032688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc0080206b93%3A0x7e247ddb28499487!2sR.%20Zacarias%20Costa%20Camargo%2C%20200%20-%20Lot.%20Remanso%20Campineiro%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013184-280!5e0!3m2!1spt-BR!2sbr!4v1634405444649!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.2895172396857!2d-47.21896128559424!3d-22.865761085032688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc0080206b93%3A0x7e247ddb28499487!2sR.%20Zacarias%20Costa%20Camargo%2C%20200%20-%20Lot.%20Remanso%20Campineiro%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013184-280!5e0!3m2!1spt-BR!2sbr!4v1634405444649!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
               <div class="info_iframe">
-                <h4 class="titulo_iframe"> Loja 05 - Hortoindia </h4> 
-                <p class="texto_iframe">R. Zacarias Costa Camargo, 200 - Remanso Campineiro, Sumaré SP - 13184-280  </p>  
-                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00  </p> 
+                <h4 class="titulo_iframe"> Loja 05 - Hortoindia </h4>
+                <p class="texto_iframe">R. Zacarias Costa Camargo, 200 - Remanso Campineiro, Sumaré SP - 13184-280 </p>
+                <p class="texto_iframe"> Terça á Sábado 09:00-19:00 / Segunda 12:00-19:00 </p>
               </div>
             </div>
-          </div>
+          </diva>
 
 
         </div>
@@ -227,21 +241,43 @@
 
     <footer class="section footer-classic section-sm">
       <div class="container">
+
         <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
-          <P class="footer-classic-title">newsletter</P>
+
+          <P class="footer-classic-title">Contato</P>
+
           <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global"
-            data-form-type="contact" method="post" action="bat/rd-mailform.php">
+            data-form-type="contact" method="post">
+
             <div class="form-wrap">
-              <label class="form-label" for="subscribe-email">Your Email Address</label>
-              <input class="form-input" id="subscribe-email" type="email" name="email"
-                data-constraints="@Email @Required">
+              <label class="form-label" for="nome">Nome * </label>
+              <input class="form-input" id="nome" type="text" name="nome" data-constraints="@Nome @Required">
             </div>
-            <div class="form-button group-sm text-center text-lg-left">
-              <button class="button button-primary button-circle" type="submit">sign up</button>
+
+            <div class="form-wrap">
+              <label class="form-label" for="email">E-mail *</label>
+              <input class="form-input" type="email"  id="email"  name="email" data-constraints="@Email @Required">
             </div>
+
+            <div class="form-wrap">
+              <label class="form-label" for="celular">Telefone / Celular</label>
+              <input class="form-input" id="celular" type="ceular" name="celular" data-constraints="@Email @Required">
+            </div>
+
+            <div class="form-wrap">
+              <label class="form-label" for="celular">Mensagem *</label>
+              <textarea name="mensagem" id="mensagem" class="form-input" cols="5" rows="3"></textarea>
+            </div>
+
+
           </form>
-          <p>Be the first to find out about our latest news, updates, and special offers.</p>
+
+          <div class="form-button group-sm text-center text-lg-left mt-5">
+            <button class="button button-primary button-circle" id="enviar" type="button">Enviar</button>
+          </div>
+
         </div>
+
       </div>
 
       <div class="container wow fadeInUp" data-wow-delay=".4s">
@@ -254,16 +290,56 @@
             <li><a class="fa fa-facebook" href="#"></a></li>
             <li><a class="fa fa-instagram" href="#"></a></li>
           </ul>
+
         </div>
+
       </div>
-    </footer>
+
+  </div>
+
+  </div>
+
+  </footer>
 
 
   </div>
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/index.js"></script>
+
+  <script>
+
+    const nome = $('#nome')
+    const email = $('#email')
+    const mensagem = $('#mensagem')
+    const celular = $('#celular')
+    const pesquisa = $('#pesquisa')
+
+    $('#enviar').on('click', e => {
+      e.preventDefault()
+      const arrayDados = [ 
+        nome.val(),
+        email.val(),
+        mensagem.val(),
+        celular.val()
+      ]
+
+      for (let i = 0; i < arrayDados.length; i++) {
+         if(! arrayDados[i]) {
+           alert('Campo vazio')
+           return false;
+         }
+      }
+    })
+
+    $('#evento_de_busca').on('click', function () {
+        if(! pesquisa.val()) {
+          alert('Preencha o campo')
+          return false
+        }
+    })
+  </script>
+
 </body>
 
 </html>
