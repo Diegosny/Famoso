@@ -41,11 +41,13 @@
     bottom: 2.8vw;
     float: right;
     right: 18px;
+    cursor: pointer;
 }
 
 .icone_pesquisa > i {
     color: black;
     font-size: 14pt;
+    cursor: pointer;
 }
 
 @media (max-width:920px) {

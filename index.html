@@ -124,8 +124,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 text-center">
-            <input type="search" class="form-control" placeholder="Pesquise">
-            <div class="icone_pesquisa">
+            <input type="search" id="pesquisa" class="form-control" placeholder="Pesquise">
+            <div class="icone_pesquisa" id="evento_de_busca">
               <i class="fas fa-search"></i>
             </div>
           </div>
@@ -241,10 +241,13 @@
 
     <footer class="section footer-classic section-sm">
       <div class="container">
+
         <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+
           <P class="footer-classic-title">Contato</P>
+
           <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global"
-            data-form-type="contact" method="post" action="bat/rd-mailform.php">
+            data-form-type="contact" method="post">
 
             <div class="form-wrap">
               <label class="form-label" for="nome">Nome * </label>
@@ -252,8 +255,8 @@
             </div>
 
             <div class="form-wrap">
-              <label class="form-label" for="nome">E-mail *</label>
-              <input class="form-input" id="snome type=" email" name="email" data-constraints="@Email @Required">
+              <label class="form-label" for="email">E-mail *</label>
+              <input class="form-input" type="email"  id="email"  name="email" data-constraints="@Email @Required">
             </div>
 
             <div class="form-wrap">
@@ -266,26 +269,36 @@
               <textarea name="mensagem" id="mensagem" class="form-input" cols="5" rows="3"></textarea>
             </div>
 
+
+          </form>
+
+          <div class="form-button group-sm text-center text-lg-left mt-5">
+            <button class="button button-primary button-circle" id="enviar" type="button">Enviar</button>
           </div>
-            <div class="form-button group-sm text-center text-lg-left mt-5">
-              <button class="button button-primary button-circle" id="enviar" type="button">Enviar</button>
-            </div>
-        </form>
 
         </div>
 
-  <div class="container wow fadeInUp" data-wow-delay=".4s">
-    <div class="footer-classic-aside">
-      <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design
-        by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
-      <ul class="social-links">
-        <li><a class="fa fa-linkedin" href="#"></a></li>
-        <li><a class="fa fa fa-twitter" href="#"></a></li>
-        <li><a class="fa fa-facebook" href="#"></a></li>
-        <li><a class="fa fa-instagram" href="#"></a></li>
-      </ul>
-    </div>
+      </div>
+
+      <div class="container wow fadeInUp" data-wow-delay=".4s">
+        <div class="footer-classic-aside">
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design
+            by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+          <ul class="social-links">
+            <li><a class="fa fa-linkedin" href="#"></a></li>
+            <li><a class="fa fa fa-twitter" href="#"></a></li>
+            <li><a class="fa fa-facebook" href="#"></a></li>
+            <li><a class="fa fa-instagram" href="#"></a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
   </div>
+
+  </div>
+
   </footer>
 
 
@@ -293,7 +306,40 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/index.js"></script>
+
+  <script>
+
+    const nome = $('#nome')
+    const email = $('#email')
+    const mensagem = $('#mensagem')
+    const celular = $('#celular')
+    const pesquisa = $('#pesquisa')
+
+    $('#enviar').on('click', e => {
+      e.preventDefault()
+      const arrayDados = [ 
+        nome.val(),
+        email.val(),
+        mensagem.val(),
+        celular.val()
+      ]
+
+      for (let i = 0; i < arrayDados.length; i++) {
+         if(! arrayDados[i]) {
+           alert('Campo vazio')
+           return false;
+         }
+      }
+    })
+
+    $('#evento_de_busca').on('click', function () {
+        if(! pesquisa.val()) {
+          alert('Preencha o campo')
+          return false
+        }
+    })
+  </script>
+
 </body>
 
 </html>
